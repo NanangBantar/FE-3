@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-header">
+            <h1>IP Tracker</h1>
+            <div class="container-input">
+                <input id="ip-address" class="ipt-style" placeholder="Insert your IP here..." type="text">
+                <button onclick="submitIP()" class="btn-style">
+                    <img src="images/icon-arrow.svg" alt="">
+                </button>
+            </div>
+
+            <div class="container-result">
+                <div class="result">
+                    <h6>IP ADDRESS</h6>
+                    <h2 id="result1">Result Here...</h2>
+                </div>
+                <div class="result">
+                    <h6>LOCATION</h6>
+                    <h2 id="result2">Result Here...</h2>
+                </div>
+                <div class="result">
+                    <h6>TIMEZONE</h6>
+                    <h2 id="result3">Result Here...</h2>
+                </div>
+                <div class="result">
+                    <h6>ISP</h6>
+                    <h2 id="result4">Result Here...</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="contaniner-content">
+            <div style="height: 500px;" id="map"></div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+
+</html>

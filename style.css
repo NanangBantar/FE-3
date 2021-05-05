@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container{
+    height: fit-content;
+}
+
+.container-header{
+    background-image: url(images/pattern-bg.png);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-header h1{
+    margin: 40px 0;
+    color: white;
+}
+
+.container-input{
+    display: flex;
+    width: 40%;
+}
+
+.btn-style{
+    border-radius: 0 10px 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ipt-style{
+    height: 50px;
+    width: 90%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    text-indent: 15px;
+    font-size: 18px;
+}
+
+.container-result{
+    display: flex;
+    z-index: 999; 
+    margin: 30px;
+    height: fit-content;
+    width: 70%;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.container-result .result{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.container-result .result h6{
+   color: rgba(0, 0, 0, 0.5);
+}
+
+.container-result .result:first-child{
+   border-radius: 20px 0 0 20px;
+}
+
+.container-result .result:last-child{
+    border-radius: 0 20px 20px 0;
+ }
